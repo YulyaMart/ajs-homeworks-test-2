@@ -2,9 +2,9 @@ import sorting from '../app';
 
 test('test', () => {
   const players = [
-    { name: 'маг', health: 50 }, { name: 'лучник', health: 1 }, { name: 'мечник', health: 100 },
+    {name: 'мечник', health: 10}, {name: 'маг', health: 100}, {name: 'лучник', health: 80},
   ];
   const result = sorting(players);
-  const expected = [{ name: 'мечник', health: 100 }, { name: 'маг', health: 50 }, { name: 'лучник', health: 1 }];
+  const expected = [{name: 'маг', health: 100}, {name: 'лучник', health: 80}, {name: 'мечник', health: 10}];
   expect(result).toEqual(expected);
 });
